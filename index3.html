@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Git checkout process </title>
+    
+    
+	
+    
+
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+</head>
+<body >
+    <div class="scrollblock block-title">
+        <h1>Assumption </h1>
+</div>
+    <div class="scrollblock block-setup">
+	<h3>
+	Last package is implemented in production (not waiting approval)
+	</h3>
+	<hr>
+	<h3>
+	Last stream and package version in production matches its corresponding in repository reademe file and directory
+	</h3>
+	</div>
+	
+	<div class="scrollblock block-create">
+        <p>
+		<h1>Steps if you don't have already cloned repository</h1><br>
+	 <code>Sign in gitlab  </code></br>
+	<code>Open project page</code><br>
+	<code>Copy clone URL,Adjust it as in the example </code><br>
+	
+    Example : <br><br>
+	<img src="6.png" /></br>	</hr>
+	
+You have to modify the link</br>
+ from <hr> git@<del>SC-</del>172-20-150-136<del>.RegionOne.stc.corp</del>:developers2/stc_bms_process_stream.git <br><hr>
+to <hr> git@172.20.150.136:developers2/stc_bms_process_stream.git
+	
+		<img src="18.png" /></br></hr>
+  Now you need to make a local branches to track the production remote branch and run git pull to check the latest update <br>
+	<code>git branch</code><br>
+	<img src="7.png" /><br>
+     <code>git checkout -b production origin/production
+					</code><br>
+			<code>git pull
+			</code><br>
+			
+				<img src="20.png" /><br>
+		<h1>Now you have the latest package in your local directory you can view it now </h1>
+
+     </p> 
+		
+    </div>
+	
+   
+    
+	<h1><a href="index4.html"> <h1>Continue to Git Workflow </h1> </a>
+	
+
+</body>
+</html>
