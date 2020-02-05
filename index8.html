@@ -62,20 +62,21 @@
 	<h3 align="left" >
 	
 	And to define your (PS1) prompt and define other settings that you want to use every time you open a new terminal window.<br>
+	It works by being run each time you open up a new terminal, window or pane.<br>
+
+	</h3>
 	
-
-It works by being run each time you open up a new terminal, window or pane.<br>
-
 A super minimal content of .bashrc might have the following: <br>
-
+<code>
 export CLICOLOR=1<br>
 export LANG="en_US.UTF-8"<br>
 alias cp="cp -i"<br>
 alias ls="ls --color=auto" <br>
 export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "<br>
 export EDITOR="vim"<br>
+</code>
 That's all you really know to get started<br>
-	</h3>
+	
 	
 	<p align="left">
 	So can we simplify editing .bashrc using notepad  ? <br>
@@ -84,9 +85,10 @@ That's all you really know to get started<br>
 	once created you can start put the alias and path you need  <br>
 	<br>
 	As example you can copy and paste these on the file and save <br>
+	<code>
 	export PATH="$PATH:~/Anaconda3:~/Anaconda3/Scripts" <br>
 	echo 'alias python="winpty python.exe"' <br>
-
+	</code>
 	
 	
 	</p>
