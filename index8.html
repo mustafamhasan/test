@@ -49,10 +49,43 @@
 	
 	<!--<img src="3.png" /><br> -->
 	
+	<h2>.bashrc script file </h2>
+	<p>
+	
+	.bashrc is a shell script that Bash runs whenever it is started interactively. It initializes an interactive shell session. You can put any command in that file that you could type at the command prompt.
+
+You put commands here to set up the shell for use in your particular environment, or to customize things to your preferences. A common thing to put in .bashrc are aliases that you want to always be available.
+	</p>
+	<h3>
+	
+	The purpose of a .bashrc file is to provide a place where you can set up variables, functions and aliases, define your (PS1) prompt and define other settings that you want to use every time you open a new terminal window.
+
+It works by being run each time you open up a new terminal, window or pane.
+
+A super minimal one might have the following:
+
+export CLICOLOR=1
+export LANG="en_US.UTF-8"
+alias cp="cp -i"
+alias ls="ls --color=auto"
+export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+export EDITOR="vim"
+That's all you really know to get started
+	</h3>
+	
+	<p>
+	So can we simplify editing .bashrc using notepad  ? <br>
+	of course we can  just type <b>notepad ~/.bashrc</b>
+	If the file not there you will be prompted to create it so go ahead <br>
+	once created you can start put the alias and path you need 
+	<br>
+	As example you can copy and paste these on the file and save <br>
+	export PATH="$PATH:~/Anaconda3:~/Anaconda3/Scripts" <br>
+	echo 'alias python="winpty python.exe"' <br>
+
 	
 	
-	
-	
+	</p>
 	
       
 </div>	
