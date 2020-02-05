@@ -52,32 +52,36 @@
 	<h2>.bashrc script file </h2>
 	<p>
 	
-	.bashrc is a shell script that Bash runs whenever it is started interactively. It initializes an interactive shell session. You can put any command in that file that you could type at the command prompt.
+	.bashrc is a shell script that Bash runs whenever it is started interactively. It initializes an interactive shell session.
+<br>	You can put any command in that file that you could type at the command prompt.
 
-You put commands here to set up the shell for use in your particular environment, or to customize things to your preferences. A common thing to put in .bashrc are aliases that you want to always be available.
+<br>You put commands here to set up the shell for use in your particular environment, 
+<br>or to customize things to your preferences. 
+<br>A common thing to put in .bashrc are aliases that you want to always be available.
 	</p>
 	<h3>
 	
-	The purpose of a .bashrc file is to provide a place where you can set up variables, functions and aliases, define your (PS1) prompt and define other settings that you want to use every time you open a new terminal window.
+	And to define your (PS1) prompt and define other settings that you want to use every time you open a new terminal window.<br>
+	
 
-It works by being run each time you open up a new terminal, window or pane.
+It works by being run each time you open up a new terminal, window or pane.<br>
 
-A super minimal one might have the following:
+A super minimal content of .bashrc might have the following: <br>
 
-export CLICOLOR=1
-export LANG="en_US.UTF-8"
-alias cp="cp -i"
-alias ls="ls --color=auto"
-export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
-export EDITOR="vim"
-That's all you really know to get started
+export CLICOLOR=1<br>
+export LANG="en_US.UTF-8"<br>
+alias cp="cp -i"<br>
+alias ls="ls --color=auto" <br>
+export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "<br>
+export EDITOR="vim"<br>
+That's all you really know to get started<br>
 	</h3>
 	
 	<p>
 	So can we simplify editing .bashrc using notepad  ? <br>
 	of course we can  just type <b>notepad ~/.bashrc</b>
 	If the file not there you will be prompted to create it so go ahead <br>
-	once created you can start put the alias and path you need 
+	once created you can start put the alias and path you need  <br>
 	<br>
 	As example you can copy and paste these on the file and save <br>
 	export PATH="$PATH:~/Anaconda3:~/Anaconda3/Scripts" <br>
@@ -86,6 +90,7 @@ That's all you really know to get started
 	
 	
 	</p>
+	<img src="d.PNG" />
 	
       
 </div>	
